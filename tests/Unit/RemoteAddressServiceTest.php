@@ -13,11 +13,12 @@ class RemoteAddressServiceTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->service = new RemoteAddressService();
+        $config = \RoundPartner\Conf\Service::get('testdomain');
+        $this->service = new RemoteAddressService($config);
     }
 
     public function testUpdateAddress()
     {
-        $this->assertTrue($this->service->updateAddress());
+        $this->assertTrue($this->service->updateAddress('127.0.0.1'));
     }
 }
