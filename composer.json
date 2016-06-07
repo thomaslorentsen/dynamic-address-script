@@ -1,0 +1,44 @@
+{
+  "name": "roundpartner/dynamica-address-script",
+  "description": "Dynamic address updater",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Tom Lorentsen",
+      "email": "tom@thomaslorentsen.co.uk"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/roundpartner/configuration"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/roundpartner/verify-hash"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/roundpartner/cloud"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RoundPartner\\DynamicAddress\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RoundPartner\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "roundpartner/cloud": "dev-master",
+    "roundpartner/configuration": "dev-master"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "phpunit/phpunit": "^4.8"
+  }
+}
