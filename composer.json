@@ -35,7 +35,8 @@
   },
   "require": {
     "roundpartner/cloud": "dev-master",
-    "roundpartner/configuration": "dev-master"
+    "roundpartner/configuration": "dev-master",
+    "benjamin-smith/php-ipify": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",

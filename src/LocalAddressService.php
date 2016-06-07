@@ -2,6 +2,8 @@
 
 namespace RoundPartner\DynamicAddress;
 
+use Ipify\Ip;
+
 class LocalAddressService
 {
     /**
@@ -9,6 +11,6 @@ class LocalAddressService
      */
     public function getCurrentAddress()
     {
-        return '';
+        return Ip::get();
     }
 }
