@@ -34,6 +34,7 @@
     }
   },
   "require": {
+    "php": ">=5.5.9",
     "roundpartner/cloud": "dev-master",
     "roundpartner/configuration": "dev-master",
     "benjamin-smith/php-ipify": "^1.0"
